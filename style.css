@@ -1,0 +1,184 @@
+:root{
+    --blue:rgb(50, 141, 221);
+    --white:antiquewhite;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--blue);
+    
+}
+
+.nav-item{
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-item:hover{
+    opacity: 0.7;
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+#welcome-section{
+    background-color: var(--white);
+    color: var(--blue);
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1{
+    margin: 1%;
+    font-size: 64px;
+}
+
+em{
+    font-weight: bold;
+}
+
+#welcome-section p{
+    margin: 5px;
+    font-size: 24px;
+}
+
+#about{
+    background-color: var(--blue);
+    color: var(--white);
+
+    /*PORQUE!?! No me deja poner porcentaje*/
+    height: 500px;
+
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+#about h3{
+    text-align: center;
+    font-size: 40px;
+    width: 40%;
+    margin-bottom: 1.1%;
+}
+#about h4{
+    font-size: 22px;
+    width: 40%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: 22px;
+    padding: 25px;
+}
+
+#projects h2{
+    font-size: 44px;
+    font-style: italic;
+}
+
+.project-tile{
+    background-color: var(--blue);
+    border-radius: 9px;
+    border: 5px solid var(--blue);
+}
+
+#projects h3{
+    text-align: center;
+    color: var(--white);
+}
+
+#project-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 50px;
+}
+
+.project-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 9px;
+}
+
+#social, #footer{
+    background-color: var(--blue);
+    color: var(--white);
+}
+#social{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#social h2{
+    font-size: 44px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    margin: 50px;
+}
+
+.social-container p{
+    font-size: 22px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    /*Ver por que no se me agrandan los iconos*/
+    font-size: 1000px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  .fa-github, .fa-linkedin {
+    font-size: 30px;
+    width: 80px;
+    color: white;
+  }
+
+#footer{
+    text-align: center;
+}
